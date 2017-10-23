@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="13216" started-at="2017-08-19T15:32:38Z" finished-at="2017-08-19T15:32:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="13216" started-at="2017-08-19T15:32:38Z" finished-at="2017-08-19T15:32:51Z">
+      <class name="com.rodan.test.RodanLoginPage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="setup" is-config="true" duration-ms="12000" started-at="2017-08-19T21:02:26Z" finished-at="2017-08-19T21:02:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="closeadvwindows()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="closeadvwindows" is-config="true" duration-ms="1216" started-at="2017-08-19T21:02:38Z" finished-at="2017-08-19T21:02:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeadvwindows -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="login" duration-ms="11456" started-at="2017-08-19T21:02:39Z" finished-at="2017-08-19T21:02:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="checkresult(org.testng.ITestResult)[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="checkresult" is-config="true" duration-ms="527" started-at="2017-08-19T21:02:51Z" finished-at="2017-08-19T21:02:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=RodanLoginPage.login()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkresult -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="teardown" is-config="true" duration-ms="6318" started-at="2017-08-19T21:02:51Z" finished-at="2017-08-19T21:02:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.rodan.test.RodanLoginPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
