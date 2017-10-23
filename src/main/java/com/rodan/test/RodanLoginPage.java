@@ -22,7 +22,7 @@ public class RodanLoginPage extends BaseClass{
 	public static void login() throws InterruptedException{
 		try{
 		    login1 =new LoginPageElements(driver);
-		    logger=report.startTest("Login naukri");
+		    logger=report.startTest("Login naukr");
 		
 		    login1.login_layer().click();
 		    logger.log(LogStatus.INFO, "enter username", GetDataProperties.getdata("username"));
