@@ -10,7 +10,10 @@
     <classes>
       <class name="com.rodan.test.RodanLoginPage">
         <methods>
+          <include name="closeadvwindows"/>
+          <include name="checkresult"/>
           <include name="login"/>
+          <include name="teardown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.rodan.test.RodanLoginPage -->

@@ -7,30 +7,30 @@ import org.openqa.selenium.WebElement;
 public class LocateElements {
 	
 	
-	public static  WebElement  getelements(WebDriver driver,String locatortype ,String locatorvalue)
+	public static  WebElement  getelements(WebDriver driver,String arr[])
 	{
-		if(locatortype.equalsIgnoreCase("id"))	{
+		if(arr[0].equalsIgnoreCase("id"))	{
 			
-			return driver.findElement(By.id(locatorvalue));
-			
-		}
-		
-		else if (locatortype.equalsIgnoreCase("xpath")) {
-			return driver.findElement(By.xpath(locatorvalue));
+			return driver.findElement(By.id(arr[1]));
 			
 		}
 		
-		else if (locatortype.equalsIgnoreCase("class")) {
-			return driver.findElement(By.className(locatorvalue));
+		else if (arr[0].equalsIgnoreCase("xpath")) {
+			return driver.findElement(By.xpath(arr[1]));
 			
 		}
 		
-		else if (locatortype.equalsIgnoreCase("name")) {
-			return driver.findElement(By.name(locatorvalue));
+		else if (arr[0].equalsIgnoreCase("class")) {
+			return driver.findElement(By.className(arr[1]));
 			
 		}
-		else if (locatortype.equalsIgnoreCase("css")) {
-			return driver.findElement(By.cssSelector(locatorvalue));
+		
+		else if (arr[0].equalsIgnoreCase("name")) {
+			return driver.findElement(By.name(arr[1]));
+			
+		}
+		else if (arr[0].equalsIgnoreCase("css")) {
+			return driver.findElement(By.cssSelector(arr[1]));
 			
 		}
 	

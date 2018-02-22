@@ -12,6 +12,7 @@ public class HandleAlert extends BaseClass{
 	{
 		al=driver.switchTo().alert();
 		al.accept();
+		
 	
 		
 	}

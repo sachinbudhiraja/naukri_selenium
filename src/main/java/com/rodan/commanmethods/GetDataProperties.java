@@ -16,5 +16,21 @@ public class GetDataProperties {
 	
 	
 	
+	public static String[] getlocatordata(String file,String var)
+	{
+		ResourceBundle rb = ResourceBundle.getBundle(file);
+		
+		
+		String str1[]=  rb.getString(var).split(":");
+		return str1;
+		
+		
+		
+		
+	}
+	
+	
+	
+	
 
 }

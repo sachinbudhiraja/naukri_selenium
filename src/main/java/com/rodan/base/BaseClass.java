@@ -1,5 +1,6 @@
 package com.rodan.base;
 
+import java.net.MalformedURLException;
 import java.util.Set;
 
 import org.testng.ITestResult;
@@ -29,8 +30,8 @@ public class BaseClass  extends IntializeWebdriver{
 	
 	
 	@BeforeSuite
-	public void setup()  {
-		IntializeWebdriver.getdriver(GetDataProperties.getdata("browser"));
+	public void setup() throws MalformedURLException  {
+		IntializeWebdriver.getdriver(GetDataProperties.getdata("browser"),GetDataProperties.getdata("remoteflag"));
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		authid=GetDataProperties.getdata("authid");
@@ -94,7 +95,8 @@ public class BaseClass  extends IntializeWebdriver{
 	public void teardown() throws Exception  {
 		
 	  Thread.sleep(5000);
-		driver.quit();
+		//driver.quit();
+	  driver.get("H:\\Workspace_selenium\\naukri_selenium\\reports\\report.html");
 		EmailReport.email();
 		
 		

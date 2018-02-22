@@ -1,9 +1,9 @@
 package com.rodan.pom;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.rodan.commanmethods.GetDataProperties;
 import com.rodan.commanmethods.LocateElements;
 
 public class LoginPageElements {
@@ -18,7 +18,7 @@ public class LoginPageElements {
 	public WebElement login_layer()
 	{
 		
-	return LocateElements.getelements(driver, "id", "login_Layer");
+	return LocateElements.getelements(driver, GetDataProperties.getlocatordata("locator", "login_layer"));
 		
 	}
 	
@@ -27,7 +27,7 @@ public class LoginPageElements {
 	public WebElement username()
 	{
 		
-	return LocateElements.getelements(driver, "id", "eLogin");
+	return LocateElements.getelements(driver,GetDataProperties.getlocatordata("locator", "user_name"));
 		
 	}
 	
@@ -35,7 +35,7 @@ public class LoginPageElements {
 	public WebElement password()
 	{
 		
-		return LocateElements.getelements(driver, "id", "pLogin");
+		return LocateElements.getelements(driver,GetDataProperties.getlocatordata("locator", "password"));
 		
 	}
 	
@@ -46,7 +46,7 @@ public class LoginPageElements {
 		
 		//return LocateElements.getelements(driver, "xpath","//button[contains(text(),'log')]");
 		
-		return LocateElements.getelements(driver, "xpath", "//div//button[@class='blueBtn']");	
+		return LocateElements.getelements(driver, GetDataProperties.getlocatordata("locator", "login_button"));	
 		
 	}
 	

@@ -1,40 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13216" started-at="2017-08-19T15:32:38Z" finished-at="2017-08-19T15:32:51Z">
+  <suite name="Default suite" duration-ms="9582" started-at="2018-02-11T17:41:24Z" finished-at="2018-02-11T17:41:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13216" started-at="2017-08-19T15:32:38Z" finished-at="2017-08-19T15:32:51Z">
+    <test name="Default test" duration-ms="9582" started-at="2018-02-11T17:41:24Z" finished-at="2018-02-11T17:41:34Z">
       <class name="com.rodan.test.RodanLoginPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="setup" is-config="true" duration-ms="12000" started-at="2017-08-19T21:02:26Z" finished-at="2017-08-19T21:02:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.rodan.test.RodanLoginPage@dc24521]" name="setup" is-config="true" duration-ms="23464" started-at="2018-02-11T23:11:01Z" finished-at="2018-02-11T23:11:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="closeadvwindows()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="closeadvwindows" is-config="true" duration-ms="1216" started-at="2017-08-19T21:02:38Z" finished-at="2017-08-19T21:02:39Z">
+        <test-method status="PASS" signature="closeadvwindows()[pri:0, instance:com.rodan.test.RodanLoginPage@dc24521]" name="closeadvwindows" is-config="true" duration-ms="2628" started-at="2018-02-11T23:11:24Z" finished-at="2018-02-11T23:11:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeadvwindows -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="login" duration-ms="11456" started-at="2017-08-19T21:02:39Z" finished-at="2017-08-19T21:02:51Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.rodan.test.RodanLoginPage@dc24521]" name="login" duration-ms="4842" started-at="2018-02-11T23:11:27Z" finished-at="2018-02-11T23:11:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.rodan.test.RodanLoginPage.login(RodanLoginPage.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="checkresult(org.testng.ITestResult)[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="checkresult" is-config="true" duration-ms="527" started-at="2017-08-19T21:02:51Z" finished-at="2017-08-19T21:02:51Z">
+        <test-method status="PASS" signature="checkresult(org.testng.ITestResult)[pri:0, instance:com.rodan.test.RodanLoginPage@dc24521]" name="checkresult" is-config="true" duration-ms="2057" started-at="2018-02-11T23:11:32Z" finished-at="2018-02-11T23:11:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=RodanLoginPage.login()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=RodanLoginPage.login()[pri:0, instance:com.rodan.test.RodanLoginPage@dc24521] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkresult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.rodan.test.RodanLoginPage@148080bb]" name="teardown" is-config="true" duration-ms="6318" started-at="2017-08-19T21:02:51Z" finished-at="2017-08-19T21:02:58Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.rodan.test.RodanLoginPage@dc24521]" name="teardown" is-config="true" duration-ms="8000" started-at="2018-02-11T23:11:34Z" finished-at="2018-02-11T23:11:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.rodan.test.RodanLoginPage -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

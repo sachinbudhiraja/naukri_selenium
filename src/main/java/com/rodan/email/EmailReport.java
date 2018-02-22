@@ -4,8 +4,6 @@ import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
-import org.testng.ITestResult;
-
 import com.rodan.commanmethods.GetDataProperties;
 
 public class EmailReport {
